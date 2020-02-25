@@ -22,7 +22,9 @@ from rest_framework.routers import DefaultRouter
 from survey import views as s_views
 
 router = DefaultRouter()
+
 router.register(r"question", s_views.QuestionViewSet)
+router.register(r"qanswer", s_views.ExamViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
