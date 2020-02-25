@@ -19,13 +19,15 @@ from django.conf.urls import url
 from django.conf import settings
 from django.conf.urls.static import static
 from rest_framework.routers import DefaultRouter
+from survey import views as s_views
 
 router = DefaultRouter()
+router.register(r"question", s_views.QuestionViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     re_path(r"^api/v1/rest-auth/", include("rest_auth.urls")),
-    re_path(r"^api/v1/admin/", include(router.urls)),
+    re_path(r"^api/v1/", include(router.urls)),
 ]
 
 if settings.DEBUG:
