@@ -9,3 +9,7 @@ class QuestionAdmin(admin.ModelAdmin):
 @admin.register(Survey)
 class SurveyAdmin(admin.ModelAdmin):
     pass
+
+@admin.register(Exam)
+class ExamAdmin(admin.ModelAdmin):
+    list_display = ('id', 'user','question','answer',)

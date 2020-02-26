@@ -25,5 +25,5 @@ Please follow all instructions to test the app
     * it require username and password and will get token for authentication
 * to create, get and update question `/api/v1/question/`
     * Only super admin can create, update and view question
-* to survey `/api/v1/qanswer/
+* to survey `/api/v1/qanswer/`
     * user can give answer for question to survey`
