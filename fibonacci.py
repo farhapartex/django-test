@@ -1,7 +1,7 @@
 class Fibonacci:
 
     def __init__(self,n):
-        ans = self.get_solution(n)
+        self.get_solution(n)
 
     def get_solution(self,n):
         a = 0
