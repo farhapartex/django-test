@@ -4,7 +4,7 @@ from .models import *
 
 @admin.register(Question)
 class QuestionAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('id', 'survey','text',)
 
 @admin.register(Survey)
 class SurveyAdmin(admin.ModelAdmin):
